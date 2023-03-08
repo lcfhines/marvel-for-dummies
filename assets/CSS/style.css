@@ -133,9 +133,11 @@ section.section.is-medium.info-container {
     font-size: 50px;
 }
 
-.favorite-button {
-    display: flex;
-    justify-content: center;
+#favorites-button {
+    background-color: var(--btncolor);
+    border-color: transparent;
+    color: #fff;
+    font-family: var(--sitefontfamily);
 }
 
 .favorite-characters h2,

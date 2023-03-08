@@ -4,161 +4,175 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Marvel for Dummies</title>
-    <!-- <link rel="stylesheet" href="assets/CSS/style.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="assets/CSS/style.css">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Slackey&display=swap" rel="stylesheet">
-    <!-- <script src="https://kit.fontawesome.com/024b4fc080.js" crossorigin="anonymous"></script> -->
-    <!-- <script src="https://use.fontawesome.com/501510d818.js"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="album.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="album.css" rel="stylesheet">
   </head>
   <body>
-    <!-- Heading: logo, my favorites button, search bar and image placeholder-->
-      <header>
-        <!-- Hero head: will stick at the top -->
-        <!-- Logo -->
-        <section class="hero  is-small">
-          <div class="hero-head">
-            <nav class="navbar">
-              <div class="container">
-                <div class="navbar-brand p-5">
-                    <img id="logo" src="./assets/images/MFD-logo.png" alt="Website logo - Spiderman character images around a thinking cloud with the text 'Marvel for Dummies'." width="290" height="115">
-                  <span class="navbar-burger" data-target="navbarMenuHeroA">
-                  </span>
-                </div>
+    <!-- <header> -->
+      <!-- Hero head: will stick at the top -->
+      <!-- Logo -->
+      <!-- <section class="hero  is-small">
+        <div class="hero-head">
+          <nav class="navbar">
+            <div class="container">
+              <div class="navbar-brand p-5">
+                  <img id="logo" src="./assets/images/MFD-logo.png" alt="Website logo - Spiderman character images around a thinking cloud with the text 'Marvel for Dummies'." width="290" height="115">
+                <span class="navbar-burger" data-target="navbarMenuHeroA">
+                </span>
               </div>
+            </div> -->
 
-              <!-- My favorites button -->
-              <div class="has-text-centered py-4">
-              <a class="button button-custom is-rounded is-medium is-centered p-4" href="#favorites-section" id="favorite-characters">My Favorites</a>
-              <!-- <i class="fa-regular fa-heart-circle-check"></i> -->
-              </div>
-            </nav>
-          </div>
-        </section>
-      </header>
-
-      <main>
-        <!-- Hero content: will be in the middle -->
-        <!-- Search bar -->
-        <div class="hero-body">
-          <div class="container">
-              <p class="control">
-                <input class="input is-info is-large" id="char-search" placeholder="Marvel Character">
-                <!-- <input type="hidden" id="char-id"> -->
-              </p>
-          </div>
-        </div>
-
-        <section class="container">
-          <figure class="image is-4x3">
-              <img id="featured-image" src="">
-            </figure>
-        </section>
-
-        <!-- Main content: will be in the middle -->
-        <section class="section is-medium info-container">
-        <!-- Marvel content -->
-          <div class="box" id="marvel-info">
-            <div class="description has-text-left" id="marvel-description" ></div>
-            <div class="cards-container" id="comics-series">
-              <div class="card">
-                <div class="card-header" id="marvel-comics">
-                  <p class="card-header-title is-centered" id="comics-title">Comics</p>
-                </div>
-                <div class="card-content">
-                  <ul class="comics-links" id="comics-links">
-                    <!-- Links added dinamicaly here -->
-                  </ul>
-                </div>
-              </div>
-
-              <div class="card">
-                <div class="card-header" id="marvel-series">
-                  <p class="card-header-title is-centered" id="series-title">Series</p>
-                </div>
-                <div class="card-content">
-                  <ul class="series-links" id="series-links">
-                  <!-- Links added dinamicaly here -->
-                  </ul>
-                </div>
-              </div>
+            <!-- <div class="has-text-centered py-4">
+            <a class="button button-custom is-rounded is-medium is-centered p-4" href="#favorites-section" id="favorite-characters">My Favorites</a>
+            <i class="fa-regular fa-heart-circle-check"></i>
             </div>
-          </div>
-        </section>
-      </main>
+          </nav>
+        </div>
+      </section>
+    </header> -->
 
-      <section>
-          <div id="save-button" class = "has-text-centered py-4">
-            <button class="button button-custom is-rounded is-large is-centered py-1" id="save-fav">Save to favorites</button>
+    <header id="header">
+        <div class="container d-flex align-items-center justify-content-between">
+        <h1 class="logo">Marvel for Dummies</h1>
+        <a class="button is-rounded" id="favorites-button" href="#favorites-section">Saved Favorites</a>      
+        </div>
+    </header>
+    <main>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <img id="char-image-4" src="./assets/images/logo.png" alt="logo">
+          <p class="lead">For those feeling lost in the Marvel Universe, simply search a Marvel character below and get a visual as well as information on the comics the character appears in. Click the 'Save to favorites' button to keep track of your squad!</p>
+        </div>
+      </div>
+      
+        <!-- Search bar -->
+      <section class="container">
+          <div class="container">
+            <p class="control">
+              <form class="">
+                <input class="input is-info is-large" id="char-search" placeholder="Marvel Character" type="search">
+              </form>
+            </p>
           </div>
       </section>
 
-      <!--Favorites section -->
-      <section class="section is-small" id="favorites-section">
-        <!-- box -->
-        <div class="favorite-characters box">
+      <section class="container">
+        <figure class="image is-4x3">
+          <img id="featured-image" src="">
+        </figure>
+      </section>
 
-            <!-- if nothing has been saved yet, replace text with "Save a character to your favorites to come back quickly" -->
-            <h2 class="has-text-centered py-1 is-size-3" id="favorites-title">Favorite Characters</h2>
-            <h3 class="has-text-centered py-1 is-size-6" id="instructions">Save your favorites to build your own squad</h3>
+        <!-- Main content: will be in the middle -->
+      <section class="section is-medium info-container">
+        <!-- Marvel content -->
+        <div class="box" id="marvel-info">
+          <div class="description has-text-left" id="marvel-description" ></div>
+          <div class="cards-container" id="comics-series">
+            <div class="card">
+              <div class="card-header" id="marvel-comics">
+                <p class="card-header-title is-centered" id="comics-title">Comics</p>
+              </div>
+              <div class="card-content">
+                <ul class="comics-links" id="comics-links">
+                    <!-- Links added dinamicaly here -->
+                </ul>
+              </div>
+            </div>
 
-          <!-- cards container -->
-          <div class="cards-container" id="favorites-card-container">
+            <div class="card">
+              <div class="card-header" id="marvel-series">
+                <p class="card-header-title is-centered" id="series-title">Series</p>
+              </div>
+              <div class="card-content">
+                <ul class="series-links" id="series-links">
+                  <!-- Links added dinamicaly here -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section>
+        <div id="save-button" class = "has-text-centered py-4">
+          <button class="button button-custom is-rounded is-large is-centered py-1" id="save-fav">Save to favorites</button>
+        </div>
+    </section>
+
+    <!--Favorites section -->
+    <section class="section is-small" id="favorites-section">
+      <!-- box -->
+      <div class="favorite-characters box">
+
+          <!-- if nothing has been saved yet, replace text with "Save a character to your favorites to come back quickly" -->
+          <h2 class="has-text-centered py-1 is-size-3" id="favorites-title">Favorite Characters</h2>
+          <h3 class="has-text-centered py-1 is-size-6" id="instructions">Save your favorites to build your own squad</h3>
+
+        <!-- cards container -->
+        <div class="cards-container" id="favorites-card-container">
             <!-- if nothing has been saved yet, we will clear the contents of class character-card-->
             <!-- if character has been saved, we need to get the name & image from localstorage-->
 
-            <div class="card character-card" id="char-card-1">
-              <div class="card-header">
-                <p class="card-header-title text is-centered" id="char-name-1">Doomsday Man</p>
-              </div>
-              <div class="card-image">
-                <figure class="image is-square" id="card-img">
-                  <img id="char-image-1" src="./assets/images/doomsday.png" alt="marvel thumbnail">
-                </figure>
+          <div class="card character-card" id="char-card-1">
+            <div class="card-header">
+              <p class="card-header-title text is-centered" id="char-name-1">Doomsday Man</p>
+            </div>
+            <div class="card-image">
+              <figure class="image is-square" id="card-img">
+                <img id="char-image-1" src="./assets/images/doomsday.png" alt="marvel thumbnail">
+              </figure>
+            </div>
+          </div>
+
+          <div class="card character-card" id="char-card-2">
+            <div class="card-header">
+              <p class="card-header-title text is-centered" id="char-name-2">Iron Man</p>
+            </div>
+            <div class="card-image">
+              <figure class="image is-square">
+                <img id="char-image-2" src="./assets/images/ironman.png" alt="marvel thumbnail">
+              </figure>
               </div>
             </div>
 
-            <div class="card character-card" id="char-card-2">
-              <div class="card-header">
-                <p class="card-header-title text is-centered" id="char-name-2">Iron Man</p>
-              </div>
-              <div class="card-image">
-                <figure class="image is-square">
-                  <img id="char-image-2" src="./assets/images/ironman.png" alt="marvel thumbnail">
-                </figure>
-              </div>
+          <div class="card character-card" id="char-card-3">
+            <div class="card-header">
+              <p class="card-header-title text is-centered" id="char-name-3">Silver Surfer</p>
             </div>
-
-            <div class="card character-card" id="char-card-3">
-              <div class="card-header">
-                <p class="card-header-title text is-centered" id="char-name-3">Silver Surfer</p>
-              </div>
-              <div class="card-image">
-                <figure class="image is-square">
-                  <img id="char-image-3" src="./assets/images/surfer.png" alt="marvel thumbnail">
-                </figure>
-              </div>
+            <div class="card-image">
+              <figure class="image is-square">
+                <img id="char-image-3" src="./assets/images/surfer.png" alt="marvel thumbnail">
+              </figure>
             </div>
+          </div>
 
-            <div class="card character-card" id="char-card-4">
-              <div class="card-header">
-                <p class="card-header-title text is-centered" id="char-name-4">Wolverine</p>
-              </div>
-              <div class="card-image">
-                <figure class="image is-square">
-                  <img id="char-image-4" src="./assets/images/wolverine.png" alt="marvel thumbnail">
-                </figure>
-              </div>
+          <div class="card character-card" id="char-card-4">
+            <div class="card-header">
+              <p class="card-header-title text is-centered" id="char-name-4">Wolverine</p>
+            </div>
+            <div class="card-image">
+              <figure class="image is-square">
+                <img id="char-image-4" src="./assets/images/wolverine.png" alt="marvel thumbnail">
+              </figure>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       <!-- Footer -->
-      <footer>Marvel for Dummies &copy; 2022</footer>
+    <footer>Marvel for Dummies &copy; 2022</footer>
 
       <!-- script and jquery source -->
       <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
