@@ -52,9 +52,11 @@ body {
     background: #eee;
 }
 
-#logo {
-    margin-left: 2em;
-    border-radius: 1em;
+.logo {
+    /* margin-left: 2em;
+    border-radius: 1em; */
+    font-family:'Slackey', cursive;
+    color: white;
 }
 
 
@@ -203,4 +205,15 @@ footer {
         margin-bottom: 1.5em;
         padding: 1%;
     }
+}
+
+.jumbotron {
+    background-color: var(--cardheaderbackground);
+    text-align: center;
+}
+
+.lead {
+    padding: 30px 10px 0px 10px;
+    text-align: center;
+    color: white;
 }
