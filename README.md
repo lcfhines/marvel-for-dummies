@@ -1,24 +1,12 @@
 ## Description
 
-Marvel for Dummies
+Continuation of group project building a database for Marvel beginners. Connected to the Marvel and Giphy APIs to bring in content based on a user's searched character.
 
-Maybe comics was not your thing, maybe Marvel was not for you. Maybe you know all about wetworks from Wildstorm, but that world is no longer viable. Marvel has taking over the real world. You are not watching superhero movies, had no desire to learn about fictional characters. However, your current friends are obsessed with Marvel and love talking about past, current and future movies.
-
--Friends are die hard Marvel fans  
--Having issues learning about characters  
--Unable to participate in conversation  
--Excluded from gatherings  
-
-NEVER FEAR: Marvel for Dummies is the app for you.
-### Website :
+### Deployed App
  ```sh
-   https://malvinah.github.io/marvel-for-dummies/
+   https://lcfhines.github.io/marvel-for-dummies/
    ```
-### Clone the Repository
-```sh
-git@github.com:malvinaH/marvel-for-dummies.git
-```
-### We used to create the project
+### Technologies Used
 ![images](https://user-images.githubusercontent.com/50510/196054897-228fda24-159a-45c6-a556-40ec0af8b09f.png)
 ![js-logo130](https://user-images.githubusercontent.com/50510/196054904-ded4002c-20ae-4701-a27e-cbbf1ef2d89d.jpg)
 ![css3_logo_130](https://user-images.githubusercontent.com/50510/196054910-8419a1cb-e5e1-4f5b-a527-dd877b302495.png)
@@ -27,9 +15,9 @@ git@github.com:malvinaH/marvel-for-dummies.git
 ![bulma-logo-130](https://user-images.githubusercontent.com/50510/196054931-1b95f368-d6e8-4986-9643-b11fb977d501.png)
 ![Google-Fonts-Logo-130](https://user-images.githubusercontent.com/50510/196054964-963fde84-e2ef-43f9-b3e1-6117bfa8612d.png)
 
-### Screenshot
+### Screenshots
 
-![Before interaction](./assets/images/MFD-screenshot1.png?raw=true "Marvel for Dummies 1")
+![On load](https://user-images.githubusercontent.com/113798073/224435187-84408869-0892-455f-a0b0-f8eef5b0006b.png)
 ![After searching information](./assets/images/MFD-screenshot2.png?raw=true "Malrvel for Dummies 2")
 ![Saved search data](./assets/images/MFD-screenshot3.png?raw=true "Marvel for Dummies 3")
 
